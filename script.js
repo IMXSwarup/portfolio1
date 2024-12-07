@@ -3,9 +3,9 @@
 //     alert('Oops! Encrypted message: Hire Me Now!');
 //   });
   
-  // Contact form submission handling
-  document.getElementById('contact-form').addEventListener('submit', (event) => {
-    event.preventDefault();
-    alert('Thank you for submitting. I’ll unlock the site once I get hired!');
-  });
+// Contact form submission handling
+// document.getElementById('contact-form').addEventListener('submit', (event) => {
+//   event.preventDefault();
+//   alert('Thank you for submitting. I’ll unlock the site once I get hired!');
+// });
   
