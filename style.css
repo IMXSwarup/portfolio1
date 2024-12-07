@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #111;
+    color: #f00;
+    text-align: center;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .alert {
+    background: #222;
+    border: 2px dashed #f00;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .alert h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    animation: flicker 1.5s infinite;
+  }
+  
+  .alert p {
+    font-size: 1.2rem;
+  }
+  
+  .about, .contact {
+    background: #222;
+    border: 2px solid #f00;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .glitch {
+    color: #f00;
+    font-size: 1.5rem;
+    position: relative;
+    animation: glitch 2s infinite;
+  }
+  
+  .glitch::before, .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #0f0;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+  }
+  
+  @keyframes glitch {
+    0%, 100% { clip: rect(0, 900px, 0, 0); }
+    25% { clip: rect(10px, 900px, 50px, 0); }
+  }
+  
+  form label, form input, form textarea, form button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #fff;
+  }
+  
+  form input, form textarea {
+    background: #111;
+    border: 2px solid #f00;
+    padding: 10px;
+  }
+  
+  form button {
+    background: #f00;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background: #900;
+  }
+  
+  @keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+
+
+.qr_class1>img{
+    width:200px;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+  
